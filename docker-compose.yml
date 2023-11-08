@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  client:
+    build: ./MERN-BLOG-API
+    ports:
+      - "8000:4000"
+  api:
+    build: ./MERN-BLOG-CLIENT
+    ports:
+      - "8001:3000"
